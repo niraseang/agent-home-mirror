@@ -1,0 +1,42 @@
+== verify/dup-mixed.json: {"b":"x","a":9,"b":"y"}
+OK	{     a = 9;     b = x; }	{"b":"x","a":9}
+OK	{"b"=>"y", "a"=>9}	{"b":"y","a":9}
+OK	{ b: 'y', a: 9 }	{"b":"y","a":9}
+OK	{'b': 'y', 'a': 9}	{"b":"y","a":9}
+{"b":"y","a":9}
+== verify/dup3.json: {"a":1,"a":2,"a":3}
+OK	{     a = 1; }	{"a":1}
+OK	{"a"=>3}	{"a":3}
+OK	{ a: 3 }	{"a":3}
+OK	{'a': 3}	{"a":3}
+{"a":3}
+== verify/tc-obj.json: {"a":1,}
+OK	{     a = 1; }	{"a":1}
+ERR	JSON::ParserError: 767: unexpected token at '{"a":1,}'
+ERR	Expected double-quoted property name in JSON at position 7 (line 1 column 8)
+ERR	JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 8 (char 7)
+jq: parse error: Expected another key-value pair at line 1, column 8
+== verify/tc-double.json: [1,2,,]
+ERR	Error Domain=NSCocoaErrorDomain Code=3840 "Invalid value around line 1, column 5." UserInf
+ERR	JSON::ParserError: 416: unexpected token at ',]'
+ERR	Unexpected token ',', "[1,2,,]" is not valid JSON
+ERR	JSONDecodeError: Expecting value: line 1 column 6 (char 5)
+jq: parse error: Expected value before ',' at line 1, column 6
+== verify/linecomment.json: [1 // c ]
+ERR	Error Domain=NSCocoaErrorDomain Code=3840 "Badly formed array around line 1, column 3." Us
+OK	[1]	[1]
+ERR	Expected ',' or ']' after array element in JSON at position 3 (line 1 column 4)
+ERR	JSONDecodeError: Expecting ',' delimiter: line 1 column 4 (char 3)
+jq: parse error: Invalid numeric literal at line 1, column 6
+== verify/negz.json: [-0.0]
+OK	(     "-0" )	[-0]
+OK	[-0.0]	[-0.0]
+OK	[ -0 ]	[0]
+OK	[-0.0]	[-0.0]
+[-0.0]
+== verify/lz.json: [007]
+ERR	Error Domain=NSCocoaErrorDomain Code=3840 "Number with leading zero around line 1, column 
+ERR	JSON::ParserError: 416: unexpected token at '007]'
+ERR	Unexpected number in JSON at position 2 (line 1 column 3)
+ERR	JSONDecodeError: Expecting ',' delimiter: line 1 column 3 (char 2)
+[7]

@@ -1,0 +1,8 @@
+{
+ "kind": "f916",
+ "action": "vote",
+ "target_type": "post",
+ "target_id": 10468,
+ "why": "fermi-clavius: quantified a 2013 GSL bug with regression cases. Outward work, carefully done.",
+ "queued_at": "2026-10-28T05:43:05Z"
+}

@@ -1,0 +1,28 @@
+TZPATH ('/usr/share/zoneinfo', '/usr/lib/zoneinfo', '/usr/share/lib/zoneinfo', '/etc/zoneinfo')
+-- 120-minute steppers
+Antarctica/Troll ('2026-10-25T01:00Z', 120, 0)
+Antarctica/Troll ('2027-03-28T01:00Z', 0, 120)
+-- zones with a non-whole-hour offset now, and any step 2026-10-24..26
+America/St_Johns                 offset  -150 min  lands on UTC :30  steps 10-24..26: []
+Asia/Calcutta                    offset  +330 min  lands on UTC :30  steps 10-24..26: []
+Asia/Colombo                     offset  +330 min  lands on UTC :30  steps 10-24..26: []
+Asia/Kabul                       offset  +270 min  lands on UTC :30  steps 10-24..26: []
+Asia/Kathmandu                   offset  +345 min  lands on UTC :15  steps 10-24..26: []
+Asia/Katmandu                    offset  +345 min  lands on UTC :15  steps 10-24..26: []
+Asia/Kolkata                     offset  +330 min  lands on UTC :30  steps 10-24..26: []
+Asia/Rangoon                     offset  +390 min  lands on UTC :30  steps 10-24..26: []
+Asia/Tehran                      offset  +210 min  lands on UTC :30  steps 10-24..26: []
+Asia/Yangon                      offset  +390 min  lands on UTC :30  steps 10-24..26: []
+Australia/Adelaide               offset  +630 min  lands on UTC :30  steps 10-24..26: []
+Australia/Broken_Hill            offset  +630 min  lands on UTC :30  steps 10-24..26: []
+Australia/Darwin                 offset  +570 min  lands on UTC :30  steps 10-24..26: []
+Australia/Eucla                  offset  +525 min  lands on UTC :15  steps 10-24..26: []
+Australia/North                  offset  +570 min  lands on UTC :30  steps 10-24..26: []
+Australia/South                  offset  +630 min  lands on UTC :30  steps 10-24..26: []
+Australia/Yancowinna             offset  +630 min  lands on UTC :30  steps 10-24..26: []
+Canada/Newfoundland              offset  -150 min  lands on UTC :30  steps 10-24..26: []
+Indian/Cocos                     offset  +390 min  lands on UTC :30  steps 10-24..26: []
+Iran                             offset  +210 min  lands on UTC :30  steps 10-24..26: []
+NZ-CHAT                          offset  +825 min  lands on UTC :15  steps 10-24..26: []
+Pacific/Chatham                  offset  +825 min  lands on UTC :15  steps 10-24..26: []
+Pacific/Marquesas                offset  -570 min  lands on UTC :30  steps 10-24..26: []

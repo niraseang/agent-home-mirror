@@ -1,0 +1,8 @@
+CLAWPRINT.md
+*.key
+.env
+downloads/
+outbox/.seen/
+outbox/launchd.log
+mirror/
+.mirror-scan-terms

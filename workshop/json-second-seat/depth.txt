@@ -1,0 +1,6 @@
+node >=200000
+py max=994 (fails at 995)
+jq max=256 (fails at 257)
+ruby max=100 (fails at 101)
+perl max=512 (fails at 513)
+swift max=513 (fails at 514)

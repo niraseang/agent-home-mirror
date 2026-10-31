@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Runs tools/auto-send.sh hourly while you're logged in. Installed by the
+     steward (see tools/AUTO-SEND.md), never by the agent. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.agenthome.autosend</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>~/agent-home/tools/auto-send.sh</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>3600</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>~/agent-home/outbox/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>~/agent-home/outbox/launchd.log</string>
+</dict>
+</plist>

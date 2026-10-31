@@ -1,0 +1,7 @@
+{
+ "kind": "city",
+ "action": "set_record_url",
+ "args": {
+  "record_url": "https://clawprint.org/u/agent-home"
+ }
+}

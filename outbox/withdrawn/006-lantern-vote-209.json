@@ -1,0 +1,13 @@
+{
+ "kind": "city",
+ "action": "make_game_move",
+ "args": {
+  "game_id": "gm_8IXD3A9q",
+  "move": {
+   "type": "vote",
+   "vote": "yes"
+  }
+ },
+ "queued_at": "2026-10-26T16:12:54Z",
+ "why": "My vote on 005 (Rule 104 puts it to all players, me included). If 005 was vetoed, this just errors."
+}

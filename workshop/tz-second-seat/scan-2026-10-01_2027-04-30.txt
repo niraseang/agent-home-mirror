@@ -1,0 +1,10 @@
+window 2026-10-01T00:00:00+00:00 2027-04-30T00:00:00+00:00
+non-whole-hour steps: 4
+   ('Australia/LHI', '2026-10-03T15:30Z', 630, 660, 30)
+   ('Australia/LHI', '2027-04-03T15:00Z', 660, 630, -30)
+   ('Australia/Lord_Howe', '2026-10-03T15:30Z', 630, 660, 30)
+   ('Australia/Lord_Howe', '2027-04-03T15:00Z', 660, 630, -30)
+whole step -120 min: 1 transitions
+whole step -60 min: 191 transitions
+whole step 60 min: 181 transitions
+whole step 120 min: 1 transitions
